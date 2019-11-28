@@ -1,0 +1,150 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">		
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>	
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<!--<app-navigation-bar></app-navigation-bar>-->
+<app-navigation-bar [title]="PageTitle"></app-navigation-bar>
+<h3><b>Welcome to Ascend! Elevate, accelerate and amplify your digital ambitions and journey.</b></h3>
+
+<br>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+            <div class="box-insights">
+                <div class="activity-flex">
+                    <div class="activity-flex-inline">
+                        <div class="activity-flex-inline-1">
+                            <div class="activity-caption">Insights</div>
+                            <div>Explore digital platform, ambitions and value it provides</div>
+                            
+                                <!-- <svg height="210" width="300">
+                                        <defs>
+                                            <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6" orient="auto">
+                                                <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+                                            </marker>
+                                        </defs>
+                                    
+                                        <line x1="100" y1="100" x2="200" y2="100" class="arrow" />
+                                </svg> -->
+
+                                    <!-- <a class="circle-link" href="" target="">
+                                    </a> -->
+                            
+                            <!-- <div>
+
+                                <button type="button" class="btn btn-default btn-circle btn-insights-x1">
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-circle btn-insights-x2">
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-circle btn-insights-x3">
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-circle btn-insights-x4">
+                                </button>
+
+                                <button type="button" class="btn btn-default btn-circle btn-insights-x5">
+                                </button>
+                                    
+                            </div> -->
+                                <br>
+                                <br>
+                                <img src="../assets/Insights.png" width="100%" height="100%"/>
+                            <div class="idr-insights"><div>Ambitions |</div><div>Value |</div><div>Exploring Digital</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template> 
+        <ng-template carouselSlide [width]="400">
+                <div class="box-imagine">
+                    <div class="activity-flex">
+                        <div class="activity-flex-inline">
+                            <div class="activity-flex-inline-1">
+                                <div class="activity-caption">Imagine</div>
+                                <div>Decide your personalized Digital Strategy</div>
+                                <!-- <div>
+                                    <button type="button" class="btn btn-default btn-circle btn-imagine-x1">
+                                    </button>
+
+                                    <button type="button" class="btn btn-default btn-circle btn-imagine-x2">
+                                    </button>
+
+                                    <button type="button" class="btn btn-default btn-circle btn-imagine-x3">
+                                    </button>
+
+                                    <button type="button" class="btn btn-default btn-circle btn-imagine-x4">
+                                    </button>
+
+                                    <button type="button" class="btn btn-default btn-circle btn-imagine-x5">
+                                    </button>
+
+                                </div> -->
+                                <br>
+                                <br>
+                                
+                                <!-- <a href="https://www.google.com/">
+                                <img src="../assets/Imagine.png" width="100%" height="100%"/>
+                                </a> -->
+
+                                <img src="../assets/Imagine.png" width="100%" height="100%" usemap="#imaginemap"/>
+                                 <map name="imaginemap">
+                                    <area shape="circle" coords="69,242,27" href="/architect">
+                                </map>
+                                <div class="idr-imagine"><div>Digital Native |</div><div>Personalized |</div><div>Becoming Digital</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide [width]="400">
+                    <div class="box-deliver">
+                        <div class="activity-flex">
+                            <div class="activity-flex-inline">
+                                <div class="activity-flex-inline-1">
+                                    <div class="activity-caption">Deliver</div>
+                                    <div>Build your capabilities and start your implementation</div>
+                                    <!-- <div>
+                                        <button type="button" class="btn btn-default btn-circle btn-deliver-x1">
+                                        </button>
+    
+                                        <button type="button" class="btn btn-default btn-circle btn-deliver-x2">
+                                        </button>
+    
+                                        <button type="button" class="btn btn-default btn-circle btn-deliver-x3">
+                                        </button>
+    
+                                        <button type="button" class="btn btn-default btn-circle btn-deliver-x4">
+                                        </button>
+    
+                                    </div> -->
+                                    <br>
+                                    <img src="../assets/Deliver.png" width="100%" height="100%"/>
+                                    <div class="idr-deliver"><div>Iterative |</div><div>Digital Capabilities |</div><div>Doing Digital</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </ng-template>
+            <ng-template carouselSlide [width]="400">
+                    <div class="box-run">
+                        <div class="activity-flex">
+                            <div class="activity-flex-inline">
+                                <div class="activity-flex-inline-1">
+                                    <div class="activity-caption">Run</div>
+                                    <div>Become fully digital by implementing efficient and sustainable solutions</div>
+                                    <img src="../assets/Run.png" width="100%" height="100%"/>
+                                    <div class="idr-run"><div>Digital Foundry |</div><div>Efficient |</div><div>Being Digital</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </ng-template>
+
+  </owl-carousel-o>
+ </body>
+</html>      
